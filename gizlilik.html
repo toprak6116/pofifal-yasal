@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Gizlilik Politikası · Pofi Fal</title>
+<style>
+:root{--zemin:#fff1dc;--kart:#fff;--yazi:#3b2a22;--soluk:#7a6a60;--mor:#6d4c8a;--turuncu:#c9702a;--cizgi:#f0dcc0}
+@media (prefers-color-scheme:dark){:root{--zemin:#1e1722;--kart:#2a2030;--yazi:#f3e9dd;--soluk:#b8a99c;--mor:#c9a8ea;--turuncu:#f0a863;--cizgi:#43364a}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--zemin);color:var(--yazi);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:720px;margin:0 auto;padding:20px 16px 48px}
+.kart{background:var(--kart);border:2px solid var(--cizgi);border-radius:20px;padding:20px 18px}
+h1{font-size:1.6rem;line-height:1.25;margin:0 0 4px;color:var(--turuncu)}
+h2{font-size:1.1rem;line-height:1.3;margin:28px 0 8px;color:var(--mor)}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin:0 0 6px}
+a{color:var(--mor);overflow-wrap:anywhere}
+.tarih{color:var(--soluk);font-size:.875rem;margin:0 0 16px}
+nav{display:flex;flex-wrap:wrap;gap:8px 16px;margin:0 0 16px;font-size:.95rem}
+footer{margin-top:28px;color:var(--soluk);font-size:.875rem;border-top:1px solid var(--cizgi);padding-top:16px}
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Yasal sayfalar"><strong>Gizlilik Politikası</strong><a href="kosullar.html">Kullanım Koşulları</a><a href="hesap-silme.html">Hesap Silme</a></nav>
+<div class="kart">
+<h1>Gizlilik Politikası</h1>
+<p class="tarih">Pofi Fal · Son güncelleme: 9 Ekim 2026</p>
+<p>Pofi Fal, el ve kahve falına bakan eğlence amaçlı bir mobil uygulamadır. Bu metin, uygulamayı kullanırken hangi verilerinin işlendiğini, neden işlendiğini, nerede ve ne kadar süre tutulduğunu ve haklarını sade bir dille anlatır.</p>
+<p>Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında aydınlatma metni niteliği taşır.</p>
+<h2>1. Veri sorumlusu</h2>
+<p>Veri sorumlusu İsmail Toprak'dur (Türkiye). Bize <a href="mailto:pofifal.destek@gmail.com">pofifal.destek@gmail.com</a> adresinden ulaşabilirsin.</p>
+<h2>2. Hangi verileri işliyoruz?</h2>
+<p>Uygulamayı kullanırken şu veriler işlenir:</p>
+<ul><li>Hesap kimliği: Uygulamayı ilk açtığında senin için rastgele bir misafir (anonim) kimlik otomatik oluşturulur. Ad, e-posta ya da telefon numarası istenmez.</li><li>Google ile giriş yaparsan: Google hesabının kimliği, e-posta adresin ve Google'ın verdiği temel profil bilgileri (ad ve profil fotoğrafı adresi) hesap kaydında tutulur. Uygulama bunlardan yalnızca e-posta adresini ekranda gösterir.</li><li>Fal fotoğrafın: Falına bakılması için gönderdiğin el ya da fincan fotoğrafı (ayrıntı için 3. bölüm).</li><li>Fal yorumları: Pofi'nin ürettiği başlık, özet, işaret yorumları ve kapanış metni; falın türü (el/kahve), tarihi ve nasıl ödendiği (günlük hak ya da coin). Fotoğraf bu kayda dahil değildir.</li><li>Hak ve coin kayıtları: Günlük ücretsiz hakkını kullanıp kullanmadığın, iade sayın, coin bakiyen ve coin hareketlerin (harcama, iade).</li><li>Bildirimler: &quot;Bu yorumu bildir&quot; düğmesine basarsan yorumun kısa özeti (en fazla 600 karakter), bildirim nedeni, fal türü ve zaman, hesap kimliğinle birlikte kaydedilir.</li><li>Teknik kayıtlar: Sunucu tarafında hata ve kullanım sayaçlarını içeren teknik günlükler tutulur. Bu günlüklerde fotoğraf, fal metni, e-posta ya da kimlik bilgisi yazılmaz. Sağlayıcının altyapısı gereği IP adresi gibi bağlantı bilgileri sağlayıcı tarafından işlenebilir.</li></ul>
+<h2>3. Fotoğrafına ne oluyor?</h2>
+<p>Fotoğrafını telefonundan Pofi'nin sunucusuna (Supabase Edge Function) gönderiyoruz. Sunucu, fotoğrafı yorum üretmesi için yapay zekâ servisi Anthropic'in API'sine iletiyor ve yanıtı sana döndürüyor.</p>
+<p>Fotoğraf bizim tarafımızda diske, veritabanına ya da dosya depolamaya YAZILMAZ; yalnızca isteğin işlendiği sürede sunucunun belleğinde bulunur ve günlüklere yazılmaz. Pofi tarafında saklanan şey yalnızca yorum metnidir.</p>
+<p>Fotoğraf, yorumun üretilmesi için Anthropic tarafından işlenir. Anthropic bu veriyi kendi gizlilik ve veri saklama politikasına göre işler; ayrıntılar için Anthropic'in yayımladığı politikalara bakabilirsin.</p>
+<p>Telefonunda, fotoğraf uygulamanın geçici önbelleğinde (ve galeriden seçtiysen kendi galerinde) durabilir. Uygulama fotoğrafı galerine kaydetmez. Paylaşım görseli oluşturursan o görsel telefonunda geçici olarak üretilir, sunucuya gönderilmez.</p>
+<p>Lütfen fotoğrafa başkalarının yüzünü ya da kimliğini ele verecek görüntüleri alma. El ve fincan fotoğrafı yeterlidir.</p>
+<h2>4. Verilerini neden kullanıyoruz?</h2>
+<ul><li>Falına bakmak ve sana yorum göstermek (hizmetin sunulması).</li><li>Günlük ücretsiz hakkı ve coin bakiyeni doğru tutmak, iade taleplerini işlemek.</li><li>Hesabını tanımak, telefon değiştirdiğinde hesabına yeniden girmeni sağlamak.</li><li>Uygunsuz ya da zararlı bulunan yorumları incelemek ve uygulamayı iyileştirmek.</li><li>Hizmetin kötüye kullanılmasını önlemek ve güvenliğini sağlamak (örn. günlük toplam istek sınırı).</li></ul>
+<p>Verilerin KVKK m.5'teki şu hukuki sebeplere dayanarak işlenir: sözleşmenin kurulması ve ifası, meşru menfaatimiz, hukuki yükümlülüklerimiz ve gerekli olduğunda açık rızan (örneğin Google ile giriş yapman).</p>
+<p>Verilerini reklam amacıyla kullanmıyor, satmıyor ve pazarlama için üçüncü kişilerle paylaşmıyoruz.</p>
+<h2>5. Verilerin nerede tutuluyor, kimlerle paylaşılıyor?</h2>
+<ul><li>Supabase: Hesap, fal yorumu, hak, coin ve bildirim kayıtların Supabase altyapısında, Frankfurt (Almanya) veri merkezinde tutulur.</li><li>Anthropic (ABD): Fotoğraf, yorum üretilirken Anthropic'in API'sine gönderilir.</li><li>Google: Google ile giriş yaparsan giriş Google'ın sistemleri üzerinden yapılır; Google kendi gizlilik politikasına tabidir.</li></ul>
+<p>Bu hizmet sağlayıcıların bir kısmı yurt dışında bulunduğu için verilerin Türkiye dışına aktarılması söz konusudur. Uygulamayı kullanarak ve Google ile giriş ya da fal isteği gibi işlemleri yaparak bu aktarımı bildiğini kabul etmiş olursun. Aktarıma onay vermek istemiyorsan uygulamayı kullanmamalısın.</p>
+<p>Verilerin, yasal zorunluluk olmadıkça bu hizmet sağlayıcılar dışında kimseyle paylaşılmaz.</p>
+<h2>6. Verileri ne kadar süre saklıyoruz?</h2>
+<ul><li>Hesap kaydın, fal yorumların, hak ve coin kayıtların ve bildirimlerin hesabını silene kadar saklanır.</li><li>Hesabını sildiğinde bu kayıtlar sunucudan silinir. Hizmet sağlayıcıların yedeklerinde silinen veri, sağlayıcının yedekleme düzenine bağlı olarak sınırlı bir süre daha bulunabilir.</li><li>Teknik günlükler, sağlayıcının günlük saklama süresi boyunca tutulur ve sonra kendiliğinden silinir.</li><li>Fotoğrafın sunucuda saklanmaz (3. bölüm).</li><li>Bir misafir hesabı silmeden uygulamayı kaldırırsan o hesabın kayıtları, silme talebinde bulunana kadar sunucuda kalır. Bunun için aşağıdaki yolları kullanabilirsin.</li></ul>
+<h2>7. Telefonunda saklananlar</h2>
+<p>Aşağıdakiler yalnızca senin telefonunda durur, sunucuya gönderilmez:</p>
+<ul><li>Fal geçmişi: Son 30 falının metni. &quot;Fallarım&quot; ekranı yalnızca telefondaki bu kopyayı gösterir. (Yorum metninin bir kopyası, 2. bölümde anlatıldığı gibi hesabına bağlı olarak sunucuda da tutulur.)</li><li>Günlük seri sayacın, Pofi'nin görünüm tercihlerin (renk, aksesuar) ve oturum bilgin.</li><li>Hata ayıklamaya yarayan kısa bir teknik kayıt (ekranda gösterilmez; fotoğraf ya da fal metni içermez).</li></ul>
+<p>Uygulamayı kaldırırsan ya da hesabını silersen bu yerel veriler de silinir.</p>
+<h2>8. KVKK kapsamındaki hakların</h2>
+<p>KVKK m.11 uyarınca veri sorumlusuna başvurarak şunları yapabilirsin:</p>
+<ul><li>Kişisel verilerinin işlenip işlenmediğini öğrenme,</li><li>İşlenmişse buna ilişkin bilgi talep etme,</li><li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</li><li>Yurt içinde veya yurt dışında verilerin aktarıldığı üçüncü kişileri bilme,</li><li>Eksik veya yanlış işlenmişse düzeltilmesini isteme,</li><li>KVKK m.7 çerçevesinde silinmesini ya da yok edilmesini isteme ve bunun verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li><li>İşlenen verilerin otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonuç çıkmasına itiraz etme,</li><li>Kanuna aykırı işlenmesi nedeniyle zarara uğramışsan zararın giderilmesini talep etme.</li></ul>
+<p>Başvurularını <a href="mailto:pofifal.destek@gmail.com">pofifal.destek@gmail.com</a> adresine e-postayla iletebilirsin. Talebini en geç 30 gün içinde yanıtlarız. Kimliğini doğrulamak için sana ek bilgi soramayabiliriz; misafir hesapların kimliği anonim olduğu için talebin ilgili hesaba bağlanabilmesi için uygulamadaki hesap silme yolunu kullanmanı öneririz.</p>
+<p>Ayrıca Kişisel Verileri Koruma Kurumu'na şikâyette bulunma hakkın saklıdır.</p>
+<h2>9. Hesabını ve verilerini silme</h2>
+<p>Hesabını istediğin zaman uygulamanın içinden silebilirsin: Ayarlar &gt; Hesap &gt; &quot;Hesabımı sil&quot;. Bu işlem hesap kaydını, fal yorumlarını, hak ve coin kayıtlarını (kalan coinlerin dahil) ve bildirimlerini sunucudan kalıcı olarak siler; telefondaki yerel verileri temizler. Geri alınamaz.</p>
+<p>Uygulamaya erişemiyorsan <a href="mailto:pofifal.destek@gmail.com">pofifal.destek@gmail.com</a> adresine silme talebi gönderebilirsin (ayrıntı için: hesap silme sayfası). İleride satın alma özelliği eklenirse, yasal olarak saklanması gereken kayıtlar (örn. fatura bilgileri) yasal süre boyunca, kimliğinden arındırılarak saklanabilir.</p>
+<h2>10. Çocuklar</h2>
+<p>Pofi Fal 18 yaşını doldurmamış kişilere yönelik değildir; 18 yaşından küçükler uygulamayı kullanmamalıdır. 18 yaşından küçük bir kişiye ait veri işlediğimizi fark edersek bu verileri sileriz. Çocuğunun uygulamayı kullandığını düşünen veli ya da vasi bizimle iletişime geçebilir.</p>
+<h2>11. Güvenlik</h2>
+<p>Veriler şifreli bağlantı (HTTPS) üzerinden iletilir. Veritabanında her kullanıcı yalnızca kendi kayıtlarını okuyabilir; coin ve hak kayıtlarını uygulama değiştiremez, yalnızca sunucu değiştirebilir. Hiçbir sistem tamamen risksiz değildir; bir veri ihlali olursa mevzuatın öngördüğü bildirimleri yaparız.</p>
+<h2>12. Eğlence amaçlıdır; yapay zekâ ile üretilen içerik</h2>
+<p>Pofi'nin yorumları yapay zekâ ile üretilir ve yalnızca eğlence amaçlıdır. Gerçek bir kehanet değildir; tıbbi, hukuki, finansal ya da başka bir profesyonel tavsiye yerine geçmez. Önemli kararlarını bu yorumlara dayandırma. Yapay zekâ yanlış ya da uygunsuz içerik üretebilir; böyle bir yorumla karşılaşırsan &quot;Bu yorumu bildir&quot; düğmesini kullanabilirsin.</p>
+<h2>13. Değişiklikler ve iletişim</h2>
+<p>Bu politika zaman zaman güncellenebilir. Önemli değişikliklerde uygulama içinde bilgilendiririz. Güncel hali her zaman uygulamada ve web sayfasında yer alır.</p>
+<p>Sorular için: <a href="mailto:pofifal.destek@gmail.com">pofifal.destek@gmail.com</a></p>
+<footer>
+<p>İsmail Toprak · Pofi Fal<br>İletişim: <a href="mailto:pofifal.destek@gmail.com">pofifal.destek@gmail.com</a></p>
+</footer>
+</div>
+</main>
+</body>
+</html>
